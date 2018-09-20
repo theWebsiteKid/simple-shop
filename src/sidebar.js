@@ -1,11 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 let Sidebar = () =>
-    <ul>
-        <li>All</li>
-        <li>Hats</li>
-        <li>Tops</li>
-        <li>Pants</li>
-    </ul>
+    <nav>
+        <NavLink to='/categories/all'>All</NavLink>
+        <NavLink to='/categories/all'>Hats</NavLink>
+        <NavLink to='/categories/all'>Tops</NavLink>
+        <NavLink to='/categories/all'>Pants</NavLink>
+    </nav>
 
 export default Sidebar;

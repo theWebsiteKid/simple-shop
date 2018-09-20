@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Navbar from './navbar';
 import Sidebar from './sidebar';
 
@@ -8,4 +9,5 @@ let Homepage = () =>
         <Sidebar />
     </div>
 
-export default Homepage;
+let HomepageContainer = connect()(Homepage)
+export default HomepageContainer;

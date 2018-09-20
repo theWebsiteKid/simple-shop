@@ -4,10 +4,7 @@ import Navbar from './navbar';
 import Sidebar from './sidebar';
 
 let AllProducts = () =>
-    <div>
-        <Navbar />
-        <Sidebar />
-    </div>
+    <h1>All Products</h1>
 
 let AllProductsContainer = connect()(AllProducts)
 export default AllProductsContainer;

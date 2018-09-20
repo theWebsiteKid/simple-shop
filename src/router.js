@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import AllProductsContainer from './all-products-screen';
 import Navbar from './navbar';
 import Sidebar from './sidebar';

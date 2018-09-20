@@ -4,7 +4,7 @@ import Router from './router';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'; 
 
-let reducer = (oldState, action) => console.log(oldState, action)
+let reducer = (oldState, action) => oldState
 
 let initialState = {
     products: [
@@ -13,7 +13,7 @@ let initialState = {
         "title": "Kitten Cap",
         "description": "This kitten cap will keep your mittens warm!",
         "price": 120,
-        "imageURL": "https: //images.unsplash.com/photo-1500174857981-b769ffdc53ce",
+        "imageURL": "https://images.unsplash.com/photo-1500174857981-b769ffdc53ce",
         "categoryId": "1"
         },
         {
@@ -21,7 +21,7 @@ let initialState = {
         "title": "Purrsian Slipper",
         "description": "Even Sherlock Holmes needed a purr or two.",
         "price": 50,
-        "imageURL": "https: //images.unsplash.com/photo-1467839024528-ac3042ac0ae7",
+        "imageURL": "https://images.unsplash.com/photo-1467839024528-ac3042ac0ae7",
         "categoryId": "1"
         },
         {
@@ -29,7 +29,7 @@ let initialState = {
         "title": "Huggable Me",
         "description": "Wear your cat in style, rain or shine.",
         "price": 30,
-        "imageURL": "https: //images.unsplash.com/photo-1503386435953-66943ba30817",
+        "imageURL": "https://images.unsplash.com/photo-1503386435953-66943ba30817",
         "categoryId": "3"
         },
         {
@@ -37,7 +37,7 @@ let initialState = {
         "title": "Our Clawmark Jeans",
         "description": "Fool, no man can kill me. But a cat might.",
         "price": 300,
-        "imageURL": "https: //images.unsplash.com/photo-1512218168353-4bba6ac5f543",
+        "imageURL": "https://images.unsplash.com/photo-1512218168353-4bba6ac5f543",
         "categoryId": "2"
         }
     ],

@@ -1,10 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Navbar from './navbar';
-import Sidebar from './sidebar';
+import ProductEntry from './product';
 
-let AllProducts = () =>
-    <h1>All Products</h1>
+let mapStateToProps = (state) => {
+    return {products: state.products}
+};
 
-let AllProductsContainer = connect()(AllProducts)
+let AllProducts = (props) =>
+    <div>
+        {props.products.map(product =>
+            <ProductEntry product={product} key={product.id} />
+        )}
+    </div>
+
+let AllProductsContainer = connect(mapStateToProps)(AllProducts)
 export default AllProductsContainer;

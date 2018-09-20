@@ -3,9 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import AllProductsContainer from './all-products-screen';
 import Navbar from './navbar';
 import Sidebar from './sidebar';
-import HatsScreen from './hats-screen';
-import TopsScreen from './pants-screen';
-import PantsScreen from './hats-screen';
+import CategoryScreenContainer from './category-screen';
 
 let NotFound = () => <h1>404 not found</h1>
 
@@ -16,9 +14,7 @@ const Router = () =>
             <Sidebar />
             <Switch>
                 <Route exact path="/" component={AllProductsContainer} />
-                <Route path="/categories/hats" component={HatsScreen} />
-                <Route path="/categories/tops" component={TopsScreen} />
-                <Route path="/categories/pants" component={PantsScreen} />
+                <Route path="/categories/:id" component={CategoryScreenContainer} />
                 <Route path="*" component={NotFound} />
             </Switch>
         </div>

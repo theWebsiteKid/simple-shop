@@ -1,6 +1,7 @@
 import React from 'react';
+import Navbar from './navbar'
 
 let Homepage = () =>
-    <h1>Homepage Works!</h1>
+    <Navbar />
 
 export default Homepage

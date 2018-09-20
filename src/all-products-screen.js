@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import Navbar from './navbar';
 import Sidebar from './sidebar';
 
-let Homepage = () =>
+let AllProducts = () =>
     <div>
         <Navbar />
         <Sidebar />
     </div>
 
-let HomepageContainer = connect()(Homepage)
-export default HomepageContainer;
+let AllProductsContainer = connect()(AllProducts)
+export default AllProductsContainer;

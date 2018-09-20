@@ -1,23 +1,24 @@
 import React from 'react';
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
-import HomepageContainer from './homepage';
+import AllProductsContainer from './all-products-screen';
+import Navbar from './navbar';
+import Sidebar from './sidebar';
 import HatsScreen from './hats-screen';
 import TopsScreen from './pants-screen';
 import PantsScreen from './hats-screen';
 
 let NotFound = () => <h1>404 not found</h1>
-let Root = () =>
-    <Redirect to="/home" />
 
 const Router = () =>
     <HashRouter>
         <div>
+            <Navbar />
+            <Sidebar />
             <Switch>
-                <Route path="/home" component={HomepageContainer} />
+                <Route exact path="/" component={AllProductsContainer} />
                 <Route path="/categories/hats" component={HatsScreen} />
                 <Route path="/categories/tops" component={TopsScreen} />
                 <Route path="/categories/pants" component={PantsScreen} />
-                <Route path="/" component={Root} />
                 <Route path="*" component={NotFound} />
             </Switch>
         </div>
